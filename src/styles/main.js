@@ -9,7 +9,6 @@ export const TimelineWrapper = styled.div`
 `;
 
 export const TimelineWrapperInner = styled.div`
-	padding: 15px 10px;
 	width: 100%;
 `;
 
@@ -38,7 +37,7 @@ export const YearWrapper = styled.p`
 			: props.format === 'l'
 			? '80px'
 			: props.lang === 'en'
-			? '90px'
+			? '75px'
 			: '105px'};
 `;
 
@@ -73,8 +72,11 @@ export const BodyWrapper = styled.article`
 	}
 
 	${ContainerWrapper}:last-of-type &:last-of-type:after {
-		box-sizing: content-box;
-		display: none;
+		background: linear-gradient(
+			to bottom,
+			${(props) => props.theme.lineColor} 0%,
+			transparent 100%
+		);
 	}
 `;
 

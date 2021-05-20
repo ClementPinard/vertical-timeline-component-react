@@ -36,8 +36,8 @@ const YearContent = (props) => {
 	return (
 		<YearWrapper format={dateFormat} lang={lang}>
 			{_currentYear}
-			{_endDate}
 			{_startDate}
+			{_endDate}
 		</YearWrapper>
 	);
 };
